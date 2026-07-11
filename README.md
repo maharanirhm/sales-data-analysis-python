@@ -1,20 +1,24 @@
-# Sales Data Analysis using Python
+#  Sales Data Analysis using Python
 
-## Project Overview
+##  Project Overview
 
-This project analyzes a furniture sales dataset containing **10,000 transaction records** using Python. The analysis focuses on transforming raw sales data into actionable business insights through data cleaning, exploratory data analysis (EDA), aggregation, and visualization. The project aims to support data-driven decision-making by identifying sales patterns, customer behavior, and product performance.
+This project analyzes a furniture sales dataset containing 10,000 sales transactions using Python. The analysis includes data cleaning, data aggregation, exploratory data analysis (EDA), and dashboard visualization to identify sales trends, promotional performance, and regional sales distribution. The project concludes with business insights and strategic recommendations to support data-driven marketing decisions.
 
 ---
 
-## Business Objectives
+##  Objectives
 
-The project addresses several business questions, including:
-
-- Which cities generate the highest sales revenue?
-- Which products contribute the most to total sales?
-- How are sales distributed across different product categories?
-- What sales trends can be identified from the dataset?
-- What business insights can support marketing and sales strategies?
+- Clean and prepare raw sales data for analysis.
+- Identify and remove duplicate records.
+- Handle missing values.
+- Convert date columns into datetime format.
+- Extract city information from shipping addresses.
+- Analyze total sales performance by city.
+- Visualize regional sales distribution.
+- Analyze promotional transactions.
+- Evaluate the relationship between product prices and total sales.
+- Examine discount distribution across product categories.
+- Generate business insights and strategic recommendations.
 
 ---
 
@@ -26,126 +30,162 @@ The project addresses several business questions, including:
 - NumPy
 - Matplotlib
 - Seaborn
+- Jupyter Notebook
 
 ---
 
-##  Project Workflow
+##  Python Skills Demonstrated
 
-```text
-Raw Dataset
-      │
-      ▼
-Data Cleaning
-      │
-      ▼
-Exploratory Data Analysis (EDA)
-      │
-      ▼
-Data Aggregation
-      │
-      ▼
-Data Visualization
-      │
-      ▼
-Business Insights
-      │
-      ▼
-Recommendations
-```
+- Data Import
+- Data Cleaning
+- Duplicate Removal
+- Missing Value Handling
+- Datetime Conversion
+- String Manipulation
+- Data Filtering
+- GroupBy Aggregation
+- Data Sorting
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Business Insight Generation
 
 ---
 
-##  Dataset Information
+#  Project Workflow
 
-- **Industry:** Furniture Retail
-- **Dataset Size:** 10,000 sales transactions
-- **Data Includes:**
-  - Sales Date
-  - Customer
-  - Product
-  - Category
-  - Quantity
-  - Price
-  - Discount
-  - Shipping Fee
-  - City
-  - Sales Status
+##  Challenge 1 – Data Cleaning
+
+### Tasks
+
+- Load the Excel dataset using Pandas.
+- Identify duplicate records.
+- Remove duplicate rows.
+- Handle missing values in the `shipping_address` column.
+- Convert the `sales_date` column into datetime format.
+- Verify the cleaned dataset using `df.info()`.
+
+### Output
+
+- Duplicate records removed.
+- Missing values handled successfully.
+- Datetime conversion completed.
+- Clean dataset ready for analysis.
+
+---
+
+##  Challenge 2 – Data Aggregation & Visualization
+
+### Tasks
+
+- Extract city names from shipping addresses.
+- Filter completed transactions.
+- Calculate total sales for each city.
+- Sort sales from highest to lowest.
+- Create a horizontal bar chart.
+- Display formatted sales labels.
+
+### Output
+
+- Sales aggregation by city.
+- Horizontal bar chart of total sales by city.
+
+---
+
+##  Challenge 3 – Advanced Dashboard
+
+### Tasks
+
+- Filter promotional transactions (`status = completed` and `discount > 0`).
+- Aggregate sales performance by product.
+- Calculate:
   - Total Revenue
+  - Average Discount
+  - Average Purchase Quantity
+- Create a dashboard consisting of:
+  - Scatter Plot (Price vs Total Sales)
+  - Box Plot (Discount Distribution by Category)
+- Generate business recommendations.
+
+### Dashboard
+
+- Scatter Plot: Product Price vs Total Sales
+- Box Plot: Discount Distribution by Product Category
 
 ---
 
-##  Analysis Performed
+#  Key Findings
 
-- Data cleaning and preprocessing
-- Handling missing values and duplicate records
-- Feature engineering
-- Data aggregation using Pandas
-- Sales performance analysis
-- Product performance analysis
-- Category analysis
-- City-based sales analysis
-- Business insight generation
+- The dataset was successfully cleaned by removing duplicate records and handling missing values.
+- Sales performance differed across cities, indicating regional variations in customer demand.
+- Promotional transactions generated significant sales revenue, although discount levels varied among product categories.
+- Higher product prices did not always correspond to higher sales revenue, suggesting that sales volume also plays an important role.
+- Discount distributions varied across categories, indicating opportunities to optimize promotional strategies.
 
 ---
 
-## 📊 Key Outputs
+#  Business Recommendations
 
-- Removed duplicate and missing data.
-- Extracted city information from shipping addresses.
-- Analyzed sales performance by city and product.
-- Built visualizations using bar charts, scatter plots, and box plots.
-- Generated business recommendations based on analytical findings.
+### 1. Optimize Promotional Campaigns
 
----
+Focus promotional campaigns on product categories that consistently generate high sales to maximize marketing effectiveness.
 
-##  Project Preview
+### 2. Strengthen Regional Marketing
 
-### Sales Analysis Visualization
+Prioritize marketing efforts in cities with the highest sales performance while evaluating improvement strategies for lower-performing regions.
 
-> *(Insert your visualization screenshots here)*
+### 3. Improve Discount Strategy
 
-Example:
-
-```markdown
-![Sales by City](images/sales-by-city.png)
-
-![Top Products](images/top-products.png)
-
-![Revenue Distribution](images/revenue-distribution.png)
-```
+Optimize discount policies by identifying categories where moderate discounts produce the highest revenue without significantly reducing profit margins.
 
 ---
 
-##  Repository Structure
+#  Project Outputs
 
-```text
-sales-data-analysis-python
-│
-├── notebook/
-│   └── Furniture_Sales_Analysis.ipynb
-│
-├── images/
-│
-├── report/
-│   └── Furniture_Sales_Analysis_Report.pdf
-│
-└── README.md
-```
+- ✅ Data Cleaning
+- ✅ Duplicate Removal
+- ✅ Missing Value Handling
+- ✅ Datetime Conversion
+- ✅ Sales Aggregation by City
+- ✅ Horizontal Bar Chart
+- ✅ Promotional Sales Dashboard
+- ✅ Scatter Plot Analysis
+- ✅ Box Plot Analysis
+- ✅ Business Insight & Recommendations
 
 ---
 
-##  Skills Demonstrated
+#  Skills Acquired
 
 - Data Cleaning
+- Data Wrangling
 - Exploratory Data Analysis (EDA)
-- Data Aggregation
 - Data Visualization
-- Business Analysis
+- Business Analytics
+- Marketing Analysis
 - Python Programming
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+- Problem Solving
+- Critical Thinking
+
+---
+
+
+# 📷 Project Preview
+
+### Sales Performance by City
+
+> *(Insert bar chart image here)*
+
+```markdown
+![Sales by City](images/bar_chart_city.png)
+```
+
+### Promotional Sales Dashboard
+
+> *(Insert dashboard image here)*
+
+```markdown
+![Dashboard](images/dashboard.png)
+```
 
 ---
 
