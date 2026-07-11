@@ -169,22 +169,6 @@ Optimize discount policies by identifying categories where moderate discounts pr
 ---
 
 
-# 📷 Project Preview
-
-### Sales Performance by City
-
-> *(Insert bar chart image here)*
-
-```markdown
-![Sales by City](images/bar_chart_city.png)
-```
-
-### Promotional Sales Dashboard
-
-> *(Insert dashboard image here)*
-
-```markdown
-![Dashboard](images/dashboard.png)
 ```
 
 ---
